@@ -1,0 +1,28 @@
+<div class="row">
+    <div class="col-md-12">
+      <h1>
+        {{title}}
+      </h1>
+    </div>
+    <div class="col-md-12">
+      <hr/>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-12">
+      <button type="button" class="btn btn-primary"><i class="fa fa-fw fa-search"></i> Hallo Welt Ich bins</button>
+      <button kendoButton (click)="onButtonClick()" [primary]="true">My Kendo UI 2 Button</button>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-xs-12 col-sm-6 example-col">
+      <p>ComboBox</p>
+      <kendo-combobox [data]="listItems" [value]="'Basketball'" class="form-control">
+      </kendo-combobox>
+    </div>
+    
+    <div class="col-xs-12 col-sm-6 example-col">
+        <p>MultiSelect</p>
+        <kendo-multiselect [data]="listItems" [value]="value" [placeholder]="'Your favorite sports'" class="form-control form-control-sm"></kendo-multiselect>
+      </div>
+  </div>
